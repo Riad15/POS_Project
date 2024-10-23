@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="132f2149417d4856ba28fcc6ec7a9944" Name="Diagram1">
+        <EntityTypeShape EntityType="StoreManagementDBModel.AspNetRole" Width="1.5" PointX="10.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.AspNetUserClaim" Width="1.5" PointX="15.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.AspNetUserLogin" Width="1.5" PointX="15.25" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.AspNetUser" Width="1.5" PointX="13" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.Category" Width="1.5" PointX="1.5" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.Customer" Width="1.5" PointX="3.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.PaymentType" Width="1.5" PointX="6.75" PointY="24.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.ProductReceiveDetail" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.ProductReceive" Width="1.5" PointX="0.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.Product" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.ProductSaleDetail" Width="1.5" PointX="11.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.ProductSaleOrderDetail" Width="1.5" PointX="8.25" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.ProductSaleOrder" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.ProductSale" Width="1.5" PointX="9" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.ProductSaleStatus" Width="1.5" PointX="3.75" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.PurchaseOrderDetail" Width="1.5" PointX="8.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.PurchaseOrder" Width="1.5" PointX="6" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.PurchaseOrderStatus" Width="1.5" PointX="3.75" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.PurchaseProductReturn" Width="1.5" PointX="5.25" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.SaleOrderDetail" Width="1.5" PointX="8.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.SaleOrder" Width="1.5" PointX="6" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.SaleOrderStatus" Width="1.5" PointX="3.75" PointY="27.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.SaleProductReturn" Width="1.5" PointX="13.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.SubCategory" Width="1.5" PointX="3.75" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.Supplier" Width="1.5" PointX="1.5" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StoreManagementDBModel.UOM" Width="1.5" PointX="0.75" PointY="10.125" IsExpanded="true" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_SubCategories_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSaleOrders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSales_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_SaleOrders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSales_PaymentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductReceiveDetails_ProductReceives" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductReceiveDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductReceiveDetails_UOMs" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSaleOrderDetails_ProductReceiveDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_PurchaseProductReturns_ProductReceiveDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductReceives_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_Products_SubCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_Products_UOMs" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSaleDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_PurchaseOrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_SaleOrderDetails_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSaleDetails_ProductSales" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_SaleProductReturns_ProductSaleDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSaleOrderDetails_ProductSaleOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_ProductSaleOrders_ProductSaleStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_PurchaseOrderDetails_PurchaseOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_PurchaseOrderDetails_UOMs1" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_PurchaseOrders_PurchaseOrderStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_SaleOrderDetails_SaleOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.FK_SaleOrders_SaleOrderStatuses" ManuallyRouted="false" />
+        <AssociationConnector Association="StoreManagementDBModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
